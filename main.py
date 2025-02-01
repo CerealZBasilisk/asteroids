@@ -24,8 +24,8 @@ def main():
 	feild = AsteroidField()
 	while True:
 		for event in pygame.event.get():
-    			if event.type == pygame.QUIT:
-        			return
+			if event.type == pygame.QUIT:
+				return
 		pygame.Surface.fill(screen,(0,0,0))
 		updatable.update(dt)
 		for object in drawable:
